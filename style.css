@@ -85,10 +85,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    rgba(48, 59, 90, 0.191)
+  );
   gap: 1.2rem;
-  background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsl(224, 30%, 27%));
-  padding: 4.4rem;
-  border-radius: 60%;
 }
 
 /* .score::after,
