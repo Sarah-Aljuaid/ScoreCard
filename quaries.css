@@ -1,0 +1,12 @@
+@media (max-width: 23.4rem) {
+  html {
+    font-size: 50%;
+  }
+
+  .card {
+    min-width: 27.6rem;
+    grid-template-columns: 1fr;
+    /* border-radius: 20px; */
+    overflow: hidden;
+  }
+}

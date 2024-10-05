@@ -1,0 +1,239 @@
+/* Font 500, 700, 800 */
+
+/* Colors
+
+### Primary
+
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+
+## Gradients
+
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0) */
+
+/* ### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%) */
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hanken Grotesk";
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1;
+  margin: 0 auto;
+  background-color: hsl(221, 100%, 96%);
+}
+
+.container {
+  max-width: 140rem;
+  padding: 9.6rem;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 60rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+}
+
+.Result {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+
+  text-align: center;
+}
+
+.subheading {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.6rem;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsl(224, 30%, 27%));
+  padding: 4.4rem;
+  border-radius: 60%;
+}
+
+/* .score::after,
+.score::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #00bb8f;
+  z-index: 1;
+}
+.score::before {
+  width: 60%;
+  /* height: 60%; */
+
+/* 60% of parent's width */
+
+/* padding-bottom: 100%;
+
+  background-color: #df7117;
+  z-index: -2; }*/
+
+.score-num {
+  font-size: 4.2rem;
+  font-weight: 800;
+}
+
+.whole-score {
+  font-size: 1.2rem;
+  color: hsl(241, 100%, 89%);
+}
+
+.Result-Details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+.details-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.details-text {
+  font-size: 1.2rem;
+  color: hsl(241, 100%, 89%);
+}
+
+/* Summary */
+
+.Summary {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 2.8rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+  align-items: center;
+
+  padding: 1.2rem 1.6rem;
+  border-radius: 9px;
+}
+
+.s-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: none;
+}
+.item-nameNDicon {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.s-name {
+  color: inherit;
+  font-size: 1.4rem;
+}
+
+.s-mark {
+  color: hsla(224, 30%, 27%, 0.734);
+  font-size: 1.4rem;
+}
+
+strong {
+  color: hsl(224, 30%, 27%);
+}
+
+.btn {
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 40px;
+  padding: 1.6rem 3.2rem;
+  font-size: 1.6rem;
+}
+
+.btn:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
+  cursor: pointer;
+}
+
+.red {
+  background-color: hsla(0, 100%, 67%, 0.15);
+  color: #f55;
+}
+
+.yellow {
+  background-color: hsla(39, 100%, 56%, 0.15);
+  color: #ffb21e;
+}
+
+.green {
+  background-color: hsla(166, 100%, 37%, 0.15);
+  color: #00bb8f;
+}
+
+.blue {
+  background-color: hsla(234, 85%, 45%, 0.15);
+  color: #1125d6;
+}
+
+/* 
+
+
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%) */
